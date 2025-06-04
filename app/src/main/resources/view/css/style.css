@@ -1,0 +1,31 @@
+.mainContainer{
+    background-color: #b8e0d4;
+    -fx-background-color: #b8e0d4 ; 
+}
+/*pour les bouton de login*/
+.btnConnexion{
+    background-color: green;
+    -fx-background-color: green;
+    -fx-pref-width:150px;
+    -fx-background-radius: 20px;
+    
+}
+.btnConnexion:hover {
+    -fx-background-color: #7be27b;
+}
+.btnAnnuler{
+    background-color: red;
+    -fx-background-color: red;
+    -fx-pref-width:120px;
+    -fx-background-radius: 20px;
+}
+.btnAnnuler:hover {
+    -fx-background-color: #ca6c6c; 
+}
+
+/*pour l'icone de la fenetre login*/
+.icon{
+    -fx-pref-width:255px;
+}
+
+
