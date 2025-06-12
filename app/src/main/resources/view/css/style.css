@@ -13,19 +13,32 @@
 .btnConnexion:hover {
     -fx-background-color: #7be27b;
 }
-.btnAnnuler{
-    background-color: red;
-    -fx-background-color: red;
-    -fx-pref-width:120px;
-    -fx-background-radius: 20px;
-}
-.btnAnnuler:hover {
-    -fx-background-color: #ca6c6c; 
-}
 
 /*pour l'icone de la fenetre login*/
 .icon{
     -fx-pref-width:255px;
 }
 
+/*pour les dashbords*/
+.btnMenu{
+    -fx-text-fill: white;
+    -fx-pref-width: 250px;
+}
 
+.btnMenu:hover{
+    -fx-text-fill: white;
+    -fx-background-color: #e27bb7;
+    
+}
+.menufix{
+    -fx-background-color:#194a7a;
+    -fx-effect: dropshadow(gaussian, #888888, 8, 0.3, 2, 2);
+}
+
+.hboxTop{
+    -fx-background-color:#194a7a;
+}
+.GSSD{
+     -fx-text-fill: white;
+     -fx-font-family: 'Arial Black';
+}

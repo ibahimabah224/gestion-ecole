@@ -23,6 +23,7 @@ dependencies {
 
     // This dependency is used by the application.
     implementation libs.guava
+    implementation 'com.jfoenix:jfoenix:9.0.10'
 }
 
 javafx {

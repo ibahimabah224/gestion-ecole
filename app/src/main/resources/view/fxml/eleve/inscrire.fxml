@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<StackPane alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="411.0" prefWidth="600.0" stylesheets="@../../css/styleGestionEleve.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" spacing="20.0">
+         <children>
+            <Label styleClass="labelInscriptionTitle" text="Inscription des eleves:" />
+            <HBox prefHeight="202.0" prefWidth="600.0" spacing="10.0">
+               <children>
+                  <VBox alignment="CENTER_RIGHT" prefHeight="259.0" prefWidth="123.0" spacing="20.0">
+                     <children>
+                        <Label text="Nom:" />
+                        <Label text="Prenom:" />
+                        <Label text="Genre:" />
+                        <Label text="Date de Naissance:" />
+                        <Label text="Niveau:" />
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="165.0" prefWidth="225.0" spacing="13.0">
+                     <children>
+                        <TextField promptText="nom ......." />
+                        <TextField promptText="prenom ......." />
+                        <TextField promptText="Masculin/feminin" />
+                        <DatePicker prefHeight="25.0" prefWidth="226.0" promptText="jour/mois/annee" />
+                        <ComboBox prefHeight="25.0" prefWidth="226.0" promptText="classe" />
+                     </children></VBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</StackPane>

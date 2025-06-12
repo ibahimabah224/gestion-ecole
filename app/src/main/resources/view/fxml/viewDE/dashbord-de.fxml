@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="root" prefHeight="409.0" prefWidth="559.0" stylesheets="@../../css/style.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.controller.DashboardDEController">
+  <!-- MENU FIXE -->
+  <left>
+    <VBox prefWidth="225.0" spacing="10" styleClass="menufix" stylesheets="@../../css/style.css" BorderPane.alignment="CENTER_LEFT">
+      <children>
+        <JFXButton alignment="BOTTOM_LEFT" graphicTextGap="8.0" onAction="#showAccueil" styleClass="btnMenu" text="Accueil">
+          <graphic>
+            <ImageView fitHeight="24" fitWidth="24" pickOnBounds="true" preserveRatio="true">
+              <image>
+                <Image url="@../../img/home.png" />
+              </image>
+            </ImageView>
+          </graphic>
+          <font>
+            <Font size="19.0" />
+          </font>
+          <VBox.margin>
+            <Insets />
+          </VBox.margin>
+        </JFXButton>
+        <JFXButton alignment="BOTTOM_LEFT" graphicTextGap="8.0" onAction="#showEleves" styleClass="btnMenu" text="Élèves">
+          <graphic>
+            <ImageView fitHeight="24" fitWidth="24" pickOnBounds="true" preserveRatio="true">
+              <image>
+                <Image url="@../../img/student.png" />
+              </image>
+            </ImageView>
+          </graphic>
+          <font>
+            <Font size="19.0" />
+          </font>
+        </JFXButton>
+        <JFXButton alignment="BOTTOM_LEFT" graphicTextGap="8.0" onAction="#showEnseignant" styleClass="btnMenu" text="Enseignants">
+          <graphic>
+            <ImageView fitHeight="24" fitWidth="24" pickOnBounds="true" preserveRatio="true">
+              <image>
+                <Image url="@../../img/teacher.png" />
+              </image>
+            </ImageView>
+          </graphic>
+          <font>
+            <Font size="19.0" />
+          </font>
+        </JFXButton>
+        <JFXButton alignment="BOTTOM_LEFT" graphicTextGap="8.0" onAction="#showEmploi" styleClass="btnMenu" text="Emploi du Temps">
+          <graphic>
+            <ImageView fitHeight="24" fitWidth="24" pickOnBounds="true" preserveRatio="true">
+              <image>
+                <Image url="@../../img/calendar.png" />
+              </image>
+            </ImageView>
+          </graphic>
+          <font>
+            <Font size="19.0" />
+          </font>
+        </JFXButton>
+        <JFXButton alignment="BOTTOM_LEFT" graphicTextGap="8.0" onAction="#showNotes" styleClass="btnMenu" text="Notes">
+          <graphic>
+            <ImageView fitHeight="24" fitWidth="24" pickOnBounds="true" preserveRatio="true">
+              <image>
+                <Image url="@../../img/notes.png" />
+              </image>
+            </ImageView>
+          </graphic>
+          <font>
+            <Font size="19.0" />
+          </font>
+        </JFXButton>
+        <JFXButton alignment="BOTTOM_LEFT" graphicTextGap="8.0" onAction="#showRapports" styleClass="btnMenu" text="Rapports">
+          <graphic>
+            <ImageView fitHeight="24" fitWidth="24" pickOnBounds="true" preserveRatio="true">
+              <image>
+                <Image url="@../../img/report.png" />
+              </image>
+            </ImageView>
+          </graphic>
+          <font>
+            <Font size="19.0" />
+          </font>
+        </JFXButton>
+        <JFXButton alignment="BOTTOM_LEFT" graphicTextGap="8.0" onAction="#logout" styleClass="btnMenu" text="Deconnexion">
+          <graphic>
+            <ImageView fitHeight="24" fitWidth="24" pickOnBounds="true" preserveRatio="true">
+              <image>
+                <Image url="@../../img/logout.png" />
+              </image>
+            </ImageView>
+          </graphic>
+          <font>
+            <Font size="19.0" />
+          </font>
+        </JFXButton>
+      </children>
+      <padding>
+        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+      </padding>
+      <BorderPane.margin>
+        <Insets />
+      </BorderPane.margin>
+    </VBox>
+  </left>
+
+  <!-- CONTENU DYNAMIQUE -->
+  <center>
+    <StackPane fx:id="contentPane" prefHeight="409.0" prefWidth="331.0" />
+  </center>
+
+  <!-- EN-TETE -->
+  <top>
+    <HBox alignment="CENTER" prefHeight="44.0" prefWidth="559.0" styleClass="hboxTop" stylesheets="@../../css/style.css" BorderPane.alignment="CENTER">
+      <children>
+        <Label styleClass="GSSD" text="GROUPE SCOLAIRE SALIM-DIAO">
+          <font>
+            <Font size="24.0" />
+          </font>
+        </Label>
+      </children>
+    </HBox>
+  </top>
+</BorderPane>

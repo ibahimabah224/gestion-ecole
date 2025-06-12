@@ -1,0 +1,40 @@
+/*pour gestion des eleves dans interface dE*/
+.menuHorizontal{
+    -fx-background-color: #e5c185;
+    -fx-effect: dropshadow(gaussian, #e5c185, 8, 0.3, 2, 2);
+}
+.vboxTop{
+   -fx-background-color: #fbf2c4
+}
+.labelGestionEleve{
+    -fx-text-fill: #194a7a;
+    -fx-font-family: 'Arial Black';
+    -fx-font-size: 20px;
+}
+.btnMenuHorizontal{
+    -fx-text-fill: white;
+    -fx-background-color: #008585;
+    -fx-font-size: 16px;
+    -fx-pref-width: 150px
+    
+}
+.btnMenuHorizontal:hover{
+    
+    -fx-text-fill: white;
+    -fx-background-color: #c7306f;
+    -fx-font-size: 16px;
+    -fx-pref-width: 150px
+}
+
+/* .btnMenuHorizontal.active-horizontal {
+    
+    -fx-text-fill: white;
+    -fx-background-color: #c7306f;
+    -fx-font-size: 16px;
+    -fx-pref-width: 150px
+} */
+.labelInscriptionTitle{
+    -fx-text-fill: #194a7a;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+}

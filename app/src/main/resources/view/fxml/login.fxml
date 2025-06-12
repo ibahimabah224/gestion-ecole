@@ -50,8 +50,7 @@
             <Insets />
          </VBox.margin>
          <children>
-        <Button id="btnConnexion" layoutX="233.0" mnemonicParsing="false" styleClass="btnConnexion" text="Connexion" textFill="#f2eded" />
-        <Button id="btnAnnuler" layoutX="407.0" mnemonicParsing="false" styleClass="btnAnnuler" text="Annuler" textFill="#f5f3f3" />
+        <Button id="btnConnexion" layoutX="380.0" mnemonicParsing="false" styleClass="btnConnexion" text="Connexion" textFill="#f2eded" />
          </children>
       </AnchorPane>
   </children>

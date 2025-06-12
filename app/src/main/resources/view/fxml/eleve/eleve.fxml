@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane alignment="TOP_CENTER" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.controller.EleveController">
+  <children>
+    <VBox alignment="TOP_CENTER" spacing="1.0" stylesheets="@../../css/styleGestionEleve.css">
+      <VBox alignment="TOP_CENTER" prefHeight="20.0" prefWidth="1214.0" styleClass="vboxTop">
+        <children>
+          <Label styleClass="labelGestionEleve" text="Gestion des élèves">
+            <font>
+              <Font name="System Bold" size="18.0" />
+            </font>
+          </Label>
+        </children>
+      </VBox>
+      <!---pour le menu de gestion des eleves-->
+      <HBox alignment="CENTER_LEFT" spacing="2.0" styleClass="menuHorizontal">
+        <JFXButton fx:id="btnInscrire" onAction="#inscrireEleve" styleClass="btnMenuHorizontal">
+          <graphic>
+            <ImageView fitHeight="18" fitWidth="18">
+              <image>
+                <Image url="@../../img/add-user.png" />
+              </image>
+            </ImageView>
+          </graphic>
+          <text>Inscrire</text>
+        </JFXButton>
+        <JFXButton fx:id="btnSearch" onAction="#rechercherEleve" styleClass="btnMenuHorizontal">
+          <graphic>
+            <ImageView fitHeight="18" fitWidth="18">
+              <image>
+                <Image url="@../../img/search.png" />
+              </image>
+            </ImageView>
+          </graphic>
+          <text>Rechercher</text>
+        </JFXButton>
+        <JFXButton fx:id="btnListe" onAction="#listeEleves" styleClass="btnMenuHorizontal">
+          <graphic>
+            <ImageView fitHeight="18" fitWidth="18">
+              <image>
+                <Image url="@../../img/list.png" />
+              </image>
+            </ImageView>
+          </graphic>
+          <text>Liste</text>
+        </JFXButton>
+        <JFXButton fx:id="btnBulletin" onAction="#bulletinsEleves" styleClass="btnMenuHorizontal">
+          <graphic>
+            <ImageView fitHeight="18" fitWidth="18">
+              <image>
+                <Image url="@../../img/bulletin.png" />
+              </image>
+            </ImageView>
+          </graphic>
+          <text>Bulletins</text>
+        </JFXButton>
+        <JFXButton fx:id="btnDiscipline" onAction="#disciplineEleves" styleClass="btnMenuHorizontal">
+          <graphic>
+            <ImageView fitHeight="18" fitWidth="18">
+              <image>
+                <Image url="@../../img/discipline.png" />
+              </image>
+            </ImageView>
+          </graphic>
+          <text>Discipline</text>
+        </JFXButton>
+        <JFXButton onAction="#absencesEleves" styleClass="btnMenuHorizontal">
+          <graphic>
+            <ImageView fitHeight="18" fitWidth="18">
+              <image>
+                <Image url="@../../img/absence.png" />
+              </image>
+            </ImageView>
+          </graphic>
+          <text>Absences</text>
+        </JFXButton>
+        <JFXButton onAction="#statsEleves" styleClass="btnMenuHorizontal">
+          <graphic>
+            <ImageView fitHeight="18" fitWidth="18">
+              <image>
+                <Image url="@../../img/stats.png" />
+              </image>
+            </ImageView>
+          </graphic>
+          <text>Statistiques</text>
+        </JFXButton>
+        <JFXButton onAction="#exportEleves" styleClass="btnMenuHorizontal">
+          <graphic>
+            <ImageView fitHeight="18" fitWidth="18">
+              <image>
+                <Image url="@../../img/export.png" />
+              </image>
+            </ImageView>
+          </graphic>
+          <text>Export</text>
+        </JFXButton>
+      </HBox>
+      <StackPane prefHeight="147.0" prefWidth="1214.0" />
+    </VBox>
+  </children>
+</StackPane>
